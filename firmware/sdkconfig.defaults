@@ -1,0 +1,2 @@
+# Enable WiFi CSI support
+CONFIG_ESP_WIFI_CSI_ENABLED=y

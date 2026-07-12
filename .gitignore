@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# PlatformIO
+firmware/.pio/
+firmware/.pioenvs/
+firmware/.piolibdeps/
+firmware/lib/
+firmware/src/config.h
+firmware/managed_components/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python venv
+venv/
+.venv/
+
+# Generated files
+*.png
+*.log
+*.cmd
+real_measurements.json
