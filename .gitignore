@@ -26,8 +26,6 @@ Thumbs.db
 venv/
 .venv/
 
-# Generated files
-*.png
 *.log
 *.cmd
 real_measurements.json
