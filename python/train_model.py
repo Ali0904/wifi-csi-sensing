@@ -13,7 +13,7 @@ DATA_DIR = "D:\\WiFi_CSI_Project\\data"
 MODEL_DIR = "D:\\WiFi_CSI_Project\\model"
 
 ACTIVITIES = ['empty_room', 'walking', 'sitting', 'standing', 'door_open', 'door_closed']
-WINDOW_SIZE = 20
+WINDOW_SIZE = 5
 NUM_SUBCARRIERS = 52
 
 

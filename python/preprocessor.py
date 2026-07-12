@@ -67,7 +67,9 @@ def extract_window_features(window_data):
     all_features['rssi_std'] = np.std(rssis)
     all_features['rssi_range'] = np.ptp(rssis)
 
-    amp_matrix = np.array(amplitudes, dtype=float)
+    max_len = max(len(a) for a in amplitudes)
+    padded = [a + [0] * (max_len - len(a)) for a in amplitudes]
+    amp_matrix = np.array(padded, dtype=float)
     all_features['amp_temporal_mean'] = np.mean(amp_matrix)
     all_features['amp_temporal_std'] = np.std(amp_matrix)
     all_features['amp_temporal_max'] = np.max(amp_matrix)
